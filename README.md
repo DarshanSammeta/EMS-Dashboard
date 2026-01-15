@@ -1,77 +1,71 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EMPLOYEE DASHBOARD SYSTEM
 
-Currently, two official plugins are available:
+A modern Employee Management Dashboard built using React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FEATURES
+- Login Authentication (Mock-based)
+- Protected Routes
+- Dashboard Overview
+- Employee List (Add / Edit / Delete)
+- Search & Filter Employees
+- Responsive UI
+- LocalStorage-based session handling
 
-## React Compiler
+TECH STACK
+Frontend: React, TypeScript
+Bundler: Vite
+Styling: Tailwind CSS, shadcn/ui
+Icons: Lucide React
+Routing: React Router DOM
+State Management: React Context API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DEMO LOGIN CREDENTIALS
+Username: admin
+Password: admin123
 
-## Expanding the ESLint configuration
+PROJECT SETUP
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone Repository
+git clone https://github.com/DarshanSammeta/EMS-Dashboard.git
+cd employee-dashboard
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. Install Dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. Start Development Server
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+App runs at:
+http://localhost:5173
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+BUILD FOR PRODUCTION
+npm run build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+DEPLOYMENT INSTRUCTIONS
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# EMS-Dashboard
->>>>>>> 67e2534b44476a1c30b68c5864dd17f2ccc665fa
+VERCEL
+1. Push code to GitHub
+2. Go to https://vercel.com
+3. New Project â†’ Import Repo
+4. Build Command: npm run build
+5. Output Directory: dist
+6. Deploy
+
+NETLIFY
+Build Command: npm run build
+Publish Directory: dist
+
+SHARED HOSTING
+1. Run npm run build
+2. Upload dist/ folder to public_html
+3. Add .htaccess for React routing
+
+SUBMISSION NOTES
+- Do not upload node_modules
+- Do not include .env files
+- Submit GitHub link, ZIP, and Loom video
+
+DEVELOPER
+Darshan Varma
+Frontend Web Developer
